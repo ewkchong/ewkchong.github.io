@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -567,21 +567,12 @@ video {
   margin-bottom: 16rem;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .flex {
   display: flex;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .self-center {
@@ -596,6 +587,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 143 50 / var(--tw-text-opacity));
 }
 
 body {
@@ -728,6 +724,13 @@ body {
 
 #links a:hover::before {
   transform: scaleX(1);
+}
+
+.main-content {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .main-content h2 {

@@ -117,6 +117,10 @@ body {
   transform: scaleX(1);
 }
 
+.main-content {
+  @apply mx-12 my-32;
+}
+
 .main-content h2 {
   margin-top: 2.5rem;
 }
