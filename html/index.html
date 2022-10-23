@@ -4,38 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The personal website of Edward Chong, an aspiring web developer and software engineer">
+    <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/styles.css"/>
-    <title>Edward Chong - Web Developer</title>
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="/dist/output.css"/>
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <title>HomeBase</title>
   </head>
   <body>
     <header>
       <nav id="navbar" class="flex align-center">
-          <img src="/images/head.png" width="52" alt="An image of my face">
-          <h2 class="name-header flex-start">EC</h2>
+          <!-- <img src="/images/head.png" width="52" alt="An image of my face"> -->
+          <h2 class="name-header flex-start">HB</h2>
           <div id="links" class="flex-end">
             <a href="/html/index.html">HOME</a>
-            <a href="/html/index.html">PROJECTS</a>
-            <a href="/html/index.html">BLOG</a>
-            <a href="/html/index.html">ABOUT</a>
+            <a class="venture-link">VENTURING IN</a>
+            <a href="/html/index.html">TESTING IDEAS</a>
+            <a href="/html/index.html">BUILDING IT OUT</a>
           </div>
         </nav>
       </header>
     <hr class="nav-divider">
-    <article class="hero flex">
-      <div id="hero-left-section" class="flex flex-column">
-        <h1 id="hero-text">Hi! I'm Edward.<br>
-          I develop web applications.
-        </h1>
-        <a id="hero-button-link" href="/ec-resume.pdf" download="ec-resume">
-          <button class="hero-button">Download My Resume</button>  
-        </a>
-      </div>
-      <img src="/images/chair-hires.jpg" width="544" alt="Myself, seated in a chair">
+    <article class="hero flex flex-column">
+      <h1 id="hero-text">HomeBase. Spreadsheets made simple yet powerful.</h1>
+      <a class="self-center my-8 venture-link">
+        <button class="hero-button">Read our story</button>
+      </a>
     </article>
+    <div class="my-64">&nbsp;</div>
+    <article data-aos="fade-down" data-aos-offset="500" class="main-content venturing mx-12">
+      <h1 class="chapter-title text-6xl">Venturing In</h1>
+      <h2 class="text-4xl">Build Your Dreams Surveys</h2> 
+      <p>In 1953, the Smithsonian released a report saying that 98% of all of the atoms in your body are replaced each year. Change is a natural part of being human, and essential to becoming successful at anything. This is why it is important to assess who we are in the present, and what we are doing to move forward in our lives. Taking a look at the various surveys about traits associated with successful entrepreneurship as well as managerial skills, I learned about who I am in relation to entrepreneurship.</p>
+      <p>Starting with the entrepreneurial skills quiz, I scored low in personal background (4/14), better in behaviour patterns (36/46), and a little worse in lifestyle factors (9/14). Broken down into the categories, it appears that my background is not very typical of entrepreneurs, but I make up for it in my behaviours. Because my personal background cannot be changed, I believe my behaviour is the most important factor to focus on; it may be helpful to have the right background, but it is ultimately our actions that shape who we are.</p>
+      <p>In the managerial skills inventory survey is where I found many actionable goals to strive for. I scored very low in many of the managerial categories due to my lack of experience. But my lack of experience is just that, something I can make up for by getting out into the world and attaining that experience. From now on, I am going to focus much of my efforts in bolstering my lack of managerial skills, especially in sales and marketing.</p>
+
+    </article>
+    <footer>&nbsp;</footer>
   </body>
   <script src="/js/index.js"></script>
 </html>

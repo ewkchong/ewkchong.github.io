@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $primary-font: 'Rubik';
 
 body {
     font-family: $primary-font, sans-serif;
-    height: 90vh;
-    overflow: hidden;
+    background-image: url("/images/layered-peaks-haikei.svg");
+    background-attachment: fixed;
+    // height: 90vh; 
+    // overflow: hidden;
 }
 
 .flex {
@@ -44,6 +50,16 @@ body {
     text-align: center;
     font-size: 3rem;
     margin-top: 15rem;
+    animation: fadeIn 1.25s;
+}
+
+.fade-item-in {
+    animation: fadeIn 1.25s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
 }
 
 #hero-button-link {
@@ -55,11 +71,15 @@ body {
     padding: 0.8rem 2.2rem 0.8rem 2.2rem;
     font-family: inherit;
     font-size: 1rem;
+    border: 2px solid black;
     border-radius: 3.125rem;
     border-color: black;
     background-color: white;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.13s;
+    animation: fadeIn 1.25s;
+    transition: background-color ease-in-out 0.13s;
+    // transition-timing-function: ease-in-out;
+    // transition-duration: 0.13s;
+    align-self: center;
 }
 
 .hero-button-hover {
@@ -99,4 +119,21 @@ body {
 
 #links a:hover::before {
     transform: scaleX(1);
+}
+
+.main-content h2 {
+    margin-top: 2.5rem;
+}
+.main-content p {
+    margin-top: 1.5rem;
+    margin-left: 5%;
+    margin-right: 30%;
+}
+
+a {
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 20rem;
 }
