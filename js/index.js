@@ -1,5 +1,3 @@
-AOS.init();
-
 const heroButton = document.querySelector(".hero-button");
 const venture = document.querySelectorAll(".venture-link");
 
