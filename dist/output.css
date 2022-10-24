@@ -562,13 +562,26 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-64 {
-  margin-top: 16rem;
-  margin-bottom: 16rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -579,8 +592,21 @@ video {
   flex-grow: 1;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .self-center {
   align-self: center;
+}
+
+.bg-alt {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 224 97 / var(--tw-bg-opacity));
 }
 
 .text-6xl {
@@ -591,6 +617,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-primary {
@@ -606,7 +637,6 @@ body {
 
 .flex {
   display: flex;
-  flex-direction: row;
 }
 
 .flex-column {
@@ -741,7 +771,7 @@ body {
   margin-top: 2.5rem;
 }
 
-.main-content p {
+.main-content > p {
   margin-top: 1.5rem;
   margin-left: 5%;
   margin-right: 30%;
@@ -753,6 +783,14 @@ a {
 
 footer {
   margin-bottom: 20rem;
+}
+
+.progress-bar {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  border: 1px solid black;
+  margin-right: 10%;
 }
 
 /*# sourceMappingURL=output.css.map */
