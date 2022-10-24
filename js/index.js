@@ -1,6 +1,7 @@
 const heroButton = document.querySelector(".hero-button");
 const venture = document.querySelectorAll(".venture-link");
 const testing = document.querySelectorAll(".testing-link");
+const buildingLinks = document.querySelectorAll(".building-link");
 
 function navigateTo(query) {
     const el = document.querySelector(query);
@@ -24,6 +25,12 @@ for (link of venture) {
 for (link of testing) {
     link.addEventListener("mousedown", () => {
         navigateTo("article.testing")
+    })
+}
+
+for (link of buildingLinks) {
+    link.addEventListener("mousedown", () => {
+        navigateTo("h1.building-it-out");
     })
 }
 
