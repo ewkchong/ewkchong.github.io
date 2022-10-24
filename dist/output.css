@@ -630,6 +630,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -857,6 +861,12 @@ table {
   margin-top: 1rem;
   color: white !important;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

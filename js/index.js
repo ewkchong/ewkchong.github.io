@@ -43,17 +43,24 @@ addRowButton.addEventListener("mousedown", () => {
           `
    table.appendChild(el); 
 })
-updateButton.addEventListener("mousedown", () => {
+
+function updateTable() {
     const el = document.createElement('tr');
     const firstNames = ['Bob', 'Kelly', 'Glenn', 'Victoria'];
     const lastNames = ['Wong', 'Thomas', 'Miller', 'Bench' ];
    el.innerHTML = `
-            <td class="cell"><input type="text" class="cell-input" value="${firstNames[Math.floor(Math.random()*4)]}"></td>
-            <td class="cell"><input type="text" class="cell-input" value="${lastNames[Math.floor(Math.random()*4)]}"></td>
-            <td class="cell"><input type="text" class="cell-input" value="\$${Math.floor(Math.random()*200)}.${Math.floor(Math.random()*99)}"></td>
-            <td class="cell"><input type="text" class="cell-input" value="${Math.floor(Math.random()*7)}"></td>
-          ` 
+            <td class="fade-item-in cell"><input type="text" class="cell-input" value="${firstNames[Math.floor(Math.random()*firstNames.length)]}"></td>
+            <td class="fade-item-in cell"><input type="text" class="cell-input" value="${lastNames[Math.floor(Math.random()*lastNames.length)]}"></td>
+            <td class="fade-item-in cell"><input type="text" class="cell-input" value="\$${Math.floor(Math.random()*200)}.${Math.floor(Math.random()*99)}"></td>
+            <td class="fade-item-in cell"><input type="text" class="cell-input" value="${Math.floor(Math.random()*7)}"></td>
+          ` ;
+    el.classList.add("fade-item-in");
     table.appendChild(el);
+}
+updateButton.addEventListener("mousedown", () => {
+    for (i=0; i < Math.random()*4; i++) {
+        updateTable();
+    }
 })
 
 // heroButton.addEventListener("mousedown", () => {
