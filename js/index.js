@@ -1,5 +1,6 @@
 const heroButton = document.querySelector(".hero-button");
 const venture = document.querySelectorAll(".venture-link");
+const testing = document.querySelectorAll(".testing-link");
 
 function navigateTo(query) {
     const el = document.querySelector(query);
@@ -17,6 +18,12 @@ heroButton.addEventListener("mouseleave", () => {
 for (link of venture) {
     link.addEventListener("mousedown", () => {
         navigateTo("article.venturing")
+    })
+}
+
+for (link of testing) {
+    link.addEventListener("mousedown", () => {
+        navigateTo("article.testing")
     })
 }
 

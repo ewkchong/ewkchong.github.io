@@ -143,7 +143,12 @@ footer {
 
 .progress-bar {
     @apply my-6;
+    border-radius: 10px;
     width: 80%;
     border: 1px solid black;
     margin-right: 10%;
+}
+
+.progress {
+    border-radius: 10px;
 }
