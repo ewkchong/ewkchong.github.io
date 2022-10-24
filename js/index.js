@@ -27,6 +27,22 @@ for (link of testing) {
     })
 }
 
+let rows = 6;
+let cols = 4;
+
+const addRowButton = document.querySelector('.add-row');
+const table = document.querySelector('table');
+addRowButton.addEventListener("mousedown", () => {
+    const el = document.createElement('tr');
+    el.innerHTML = `
+            <td class="cell"><input type="text" class="cell-input"></td>
+            <td class="cell"><input type="text" class="cell-input"></td>
+            <td class="cell"><input type="text" class="cell-input"></td>
+            <td class="cell"><input type="text" class="cell-input"></td>
+          `
+   table.appendChild(el); 
+})
+
 // heroButton.addEventListener("mousedown", () => {
 //     navigateTo("article.main-content");
 // })
