@@ -4,8 +4,8 @@ import { ProjectData } from './Project.tsx';
 
 const ProjectList = () => {
 	const projects: ProjectData[] = [
-		{ title: "options-sim", description: "A simulation of a continuous double auction (CDA) options market using the Black-Scholes-Merton pricing model and lognormal asset price simulation."},
-		{ title: "git-goin", description:""}
+		{ title: "Options Exchange Simulator", description: "A simulation of a continuous double auction (CDA) options market using the Black-Scholes-Merton pricing model and lognormal asset price simulation."},
+		{ title: "Git Goin'", description:""}
 	]
 
 	return (

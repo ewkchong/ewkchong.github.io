@@ -1,4 +1,5 @@
 import './App.css'
+import Hero from './components/Hero'
 import NavBar from './components/Navbar'
 import ProjectList from './components/ProjectList'
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
 		<NavBar />
-		<h1>PROJECTS</h1>
+		<Hero />
+		<h1 id="projects-header">PROJECTS</h1>
 		<ProjectList />
     </>
   )
