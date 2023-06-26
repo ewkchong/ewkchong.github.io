@@ -9,8 +9,11 @@ function App() {
     <>
 		<NavBar />
 		<Hero />
-		<h1 id="projects-header">PROJECTS</h1>
-		<ProjectList />
+		
+		{
+			// <h1 id="projects-header">PROJECTS</h1>
+			// <ProjectList />
+		}
     </>
   )
 }
