@@ -1,7 +1,6 @@
 import './App.css'
 import Hero from './components/Hero'
 import NavBar from './components/Navbar'
-import ProjectList from './components/ProjectList'
 
 function App() {
 
