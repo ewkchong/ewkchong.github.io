@@ -18,7 +18,7 @@ const Hero = () => {
 			<Button text="Email" href="mailto:eddiewchong@outlook.com" />
 			<Button text="Projects" href="https://github.com/ewkchong" />
 			<Button text="LinkedIn" href="https://linkedin.com/in/ewkchong" />
-			<Button text="Resume" href="./files/eddieresume.pdf" />
+			<Button text="Resume" href="/eddieresume.pdf" />
 		</div>
 	)
 }
