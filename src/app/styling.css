@@ -1,0 +1,24 @@
+.exp-line {
+	@apply h-full w-2 border-l-2 border-white;
+}
+
+.bulb {
+	--bulb-size: 1.33rem;
+	--border-size: 0.25rem;
+	--half-border-size: calc(var(--border-size) / 2);
+	--half-bulb: calc(var(--bulb-size) / 2);
+	--positive-left-offset: calc(var(--half-bulb) - var(--half-border-size));
+	--left-offset: calc(var(--positive-left-offset) * -1);
+	position: relative;
+	background-color: #fff;
+	border: var(--border-size) solid #3c3c5a;
+	height: var(--bulb-size);
+	width: var(--bulb-size);
+	border-radius: 50%;
+	left: calc(0rem - 2.5rem - var(--half-bulb) - var(--half-border-size));
+	top: calc(var(--bulb-size) + var(--border-size));
+}
+
+.fit-screen {
+	max-width: 100vw;
+}
