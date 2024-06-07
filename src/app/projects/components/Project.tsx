@@ -25,7 +25,7 @@ export default function Project(props: ProjectProps) {
 				{
 					tech &&
 					tech.map(t => {
-						return <span className="tech">&bull; {t}</span>
+						return <span key={t} className="tech">&bull; {t}</span>
 					})
 				}
 			</div>
